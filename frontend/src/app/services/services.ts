@@ -18,19 +18,7 @@ import { RetourProduit, NonConformite, Utilisateur, HistoriqueRetour } from '../
 @Injectable({ providedIn: 'root' })
 export class RetourService {
 
-
-// RetourService
 private url = 'https://backend-327247053319.europe-west1.run.app/api/retours';
-
-// NonConformiteService
-private url = 'https://backend-327247053319.europe-west1.run.app/api/non-conformites';
-
-// UtilisateurService
-private url = 'https://backend-327247053319.europe-west1.run.app/api/utilisateurs';
-
-// HistoriqueService
-private url = 'https://backend-327247053319.europe-west1.run.app/api/historique';
-
 
   constructor(private http: HttpClient) {}
 
@@ -74,7 +62,8 @@ private url = 'https://backend-327247053319.europe-west1.run.app/api/historique'
 @Injectable({ providedIn: 'root' })
 export class NonConformiteService {
 
-  private url = '/api/non-conformites';
+
+private url = 'https://backend-327247053319.europe-west1.run.app/api/non-conformites';
 
   constructor(private http: HttpClient) {}
 
@@ -111,7 +100,7 @@ export class NonConformiteService {
 @Injectable({ providedIn: 'root' })
 export class UtilisateurService {
 
-  private url = '/api/utilisateurs';
+private url = 'https://backend-327247053319.europe-west1.run.app/api/utilisateurs';
 
   constructor(private http: HttpClient) {}
 
@@ -144,7 +133,7 @@ export class UtilisateurService {
 @Injectable({ providedIn: 'root' })
 export class HistoriqueService {
 
-  private url = '/api/historique';
+private url = 'https://backend-327247053319.europe-west1.run.app/api/historique';
 
   constructor(private http: HttpClient) {}
 
