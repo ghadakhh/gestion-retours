@@ -18,7 +18,19 @@ import { RetourProduit, NonConformite, Utilisateur, HistoriqueRetour } from '../
 @Injectable({ providedIn: 'root' })
 export class RetourService {
 
-  private url = '/api/retours'; // URL de base
+
+// RetourService
+private url = 'https://backend-327247053319.europe-west1.run.app/api/retours';
+
+// NonConformiteService
+private url = 'https://backend-327247053319.europe-west1.run.app/api/non-conformites';
+
+// UtilisateurService
+private url = 'https://backend-327247053319.europe-west1.run.app/api/utilisateurs';
+
+// HistoriqueService
+private url = 'https://backend-327247053319.europe-west1.run.app/api/historique';
+
 
   constructor(private http: HttpClient) {}
 
